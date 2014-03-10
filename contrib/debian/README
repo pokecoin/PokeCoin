@@ -1,0 +1,20 @@
+This directory contains files used to package pokécoind/pokécoin-qt
+for Debian-based Linux systems.
+
+If you compile pokécoind/pokécoin-qt yourself, there are some
+useful files here:
+
+pokécoin: URI support
+--------------------
+
+pokécoin-qt.desktop  (Gnome / Open Desktop)
+To install:
+  sudo desktop-file-install pokécoin-qt.desktop
+  sudo update-desktop-database
+
+If you build yourself, you will either need to modify the paths in
+the .desktop file or copy or symlink your pokécoin-qt binary to /usr/bin
+and the ../../share/pixmaps/pokécoin128.png to /usr/share/pixmaps
+
+pokécoin-qt.protocol (KDE)
+

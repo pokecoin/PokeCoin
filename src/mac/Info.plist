@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>pokécoin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>pokécoin</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleShortVersionString</key>
+        <string>1.5.2</string>
+	<key>CFBundleVersion</key>
+        <string>1.5.2</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>CFBundleIconFile</key>
+	<string>Pokécoin.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© Pokécoin</string>
+	<key>CFBundleSignature</key>
+	<string>POKÉ</string>
+	<key>CFBundleExecutable</key>
+	<string>Pokécoin-Qt</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.pokécoin.wallet-qt</string>
+	<key>CFBundleName</key>
+	<string>Pokécoin-Qt</string>
+</dict>
+</plist>
