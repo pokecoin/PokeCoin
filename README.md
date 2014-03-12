@@ -26,20 +26,19 @@ Scrypt Proof of Work
 
 Special reward system: Random block rewards
 
-Blocks				Reward (Poké)
-1-100,000			0-500,000
+1-100,000		=	0-500,000 Pokécoin reward
 
-100,001-200,000		0-250,000
+100,001-200,000	=	0-250,000 Pokécoin reward
 
-200,001-300,000		0-125,000
+200,001-300,000	=	0-125,000 Pokécoin reward
 
-300,001-400,000		0-62,500
+300,001-400,000	=	0-62,500 Pokécoin reward
 
-400,001-500,000		0-31,250
+400,001-500,000	=	0-31,250 Pokécoin reward
 
-500,001-700,000		0-15,625
+500,001-700,000	=	0-15,625 Pokécoin reward
 
-700,001+			5,000 (flat)
+700,001+		=	5,000 (flat) Pokécoin reward
 
 ### pokécoind
 
