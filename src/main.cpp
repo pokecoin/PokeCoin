@@ -1093,7 +1093,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
     std::string cseed_str = prevHash.ToString().substr(7,7);
     const char* cseed = cseed_str.c_str();
     long seed = hex2long(cseed);
-    int rand = generateMTRandom(seed, 1499999);
+    int rand = generateMTRandom(seed, 499999);
     int rand1 = 0;
     int rand2 = 0;
     int rand3 = 0;
@@ -1109,7 +1109,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         cseed_str = prevHash.ToString().substr(7,7);
         cseed = cseed_str.c_str();
         seed = hex2long(cseed);
-        rand1 = generateMTRandom(seed, 749999);
+        rand1 = generateMTRandom(seed, 249999);
         nSubsidy = (1 + rand1) * COIN;
     }
     else if(nHeight < 300000)
@@ -1117,7 +1117,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         cseed_str = prevHash.ToString().substr(6,7);
         cseed = cseed_str.c_str();
         seed = hex2long(cseed);
-        rand2 = generateMTRandom(seed, 374999);
+        rand2 = generateMTRandom(seed, 124999);
         nSubsidy = (1 + rand2) * COIN;
     }
     else if(nHeight < 400000)
@@ -1125,7 +1125,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         cseed_str = prevHash.ToString().substr(7,7);
         cseed = cseed_str.c_str();
         seed = hex2long(cseed);
-        rand3 = generateMTRandom(seed, 187499);
+        rand3 = generateMTRandom(seed, 62499);
         nSubsidy = (1 + rand3) * COIN;
     }
     else if(nHeight < 500000)
@@ -1133,7 +1133,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         cseed_str = prevHash.ToString().substr(7,7);
         cseed = cseed_str.c_str();
         seed = hex2long(cseed);
-        rand4 = generateMTRandom(seed, 93749);
+        rand4 = generateMTRandom(seed, 31249);
         nSubsidy = (1 + rand4) * COIN;
     }
     else if(nHeight < 700000)
@@ -1141,15 +1141,15 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         cseed_str = prevHash.ToString().substr(6,7);
         cseed = cseed_str.c_str();
         seed = hex2long(cseed);
-        rand5 = generateMTRandom(seed, 46874);
+        rand5 = generateMTRandom(seed, 15624);
         nSubsidy = (1 + rand5) * COIN;
     }
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 5 * 60 * 60; // PokéCoin: every 5 hours
-static const int64 nTargetSpacing = 80; // PokéCoin: 1 minute 20 seconds
+static const int64 nTargetTimespan = 1 * 60 * 60; // PokéCoin: every 1 hours
+static const int64 nTargetSpacing = 90; // PokéCoin: 1 minute 30 seconds
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
